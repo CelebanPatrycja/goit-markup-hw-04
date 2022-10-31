@@ -33,6 +33,8 @@ li {display: inline;}
 }
 .section-gray {
   background: var(--seventh-color);
+  background-image: url(../images/BackgroundIndex.jpg);
+  background-size: cover;
 }
 
 .h1 {
@@ -374,7 +376,6 @@ containter {
   color: var(--secondary-color);}
 
 .grey-class {
-  /* background-image: url(../images/BackgroundIndex.jpg); */
   display: flex;
   flex-direction: column;
   align-items: center;
