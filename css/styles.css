@@ -85,9 +85,11 @@ margin-right: 50px;}
   display: flex;
   margin-left: 50px;
 } 
-.mail-icon::before {
-  margin-right: 10px;
-}
+.lorem-icon{
+  display: inline-block;
+  /* width: 70px;
+  height: 70px; */
+color: var(--fifth-color);}
 
 .list {
   display: flex;
