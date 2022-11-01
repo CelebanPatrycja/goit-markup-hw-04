@@ -76,13 +76,22 @@ margin-right: 46px;}
  /* text-align: center;
  gap: 50px; */
 }
+
+.mail-icon{
+  margin-top: 32px;
+  color: var(--fifth-color); }
+
+
+
 .mail-adress{color: var(--main-color);
 margin-right: 50px;}
 .telephone{color:var(--third-color);}
 
 /* .mailandtel{display: flex;} */
 .mailandtel {
+  align-items: center;
   display: flex;
+  margin-top: 32px;
   margin-left: 50px;
 } 
 .lorem-icon{
