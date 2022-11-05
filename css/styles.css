@@ -37,14 +37,7 @@
   }
   .mail-icon{fill: var(--third-color);
   margin-right: 10px;}
-.mail-icon{fill:var(--main-color);}
-
-.smartphone-icon{fill: var(--third-color);
-  margin-right: 10px;}
-.smartphone-icon{fill:var(--main-color);}
-
-
-
+  .smatphone-icon{fill: var(--third-color);}
   .h1 {
     font-size: 44px;
     color: var(--secondary-color);
