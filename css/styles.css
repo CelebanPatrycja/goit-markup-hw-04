@@ -94,6 +94,9 @@
   .lorem-margin {
     margin-right: 30px;
   }
+  .lorems{display: flex;
+  align-items: center
+  justify-content:center;}
   
   .lorem-margin:last-child {
     margin-right: 0;
