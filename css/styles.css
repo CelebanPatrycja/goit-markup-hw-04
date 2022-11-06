@@ -106,7 +106,7 @@
     justify-content: center;
     align-items: center;
     background-color: #f5f4fa;
-    margin-top: 94px;
+    margin-top: 94px6;
   }
 
   .loremparagraph{text-align: justify;
@@ -344,6 +344,7 @@
   .team-list{display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 30px;
   margin-bottom: 94px;}
   
