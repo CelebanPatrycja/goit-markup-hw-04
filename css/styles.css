@@ -338,9 +338,6 @@
   .lorem-margin:last-child {
     margin-right: 0;
   }
-  .align-member {
-    text-align: center;
-  }
   .team-list{display: flex;
   flex-direction: row;
   justify-content: center;
@@ -396,7 +393,39 @@
     text-align: center;
   }
   
-  
+  .media-list{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .media-list-item{
+    display: flex;
+    align-items: center;
+  }
+  .media-list-item:hover,
+  .media-list-item:focus {
+  }
+    
+  .media-list-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+  .media-list-link:hover,
+  .media-list-link:focus {
+    background-color: var(--main-color);}
+
+  .media-list-link:hover svg,
+ .media-list-link:focus svg {
+    fill: var(--fourth-color);
+  }
+  .social-icon {
+    fill: #afb1b8;
+  }
   .picture-margin {
     margin-right: 30px;
   }
