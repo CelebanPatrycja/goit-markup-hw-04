@@ -218,10 +218,14 @@ ul {
   margin: 0 auto;
   display: inline-block;
 }
-
+.joinus-section {
+  list-style: none;
+  padding-top: 72px;
+  margin-left: 172px;
+}
 .joinus-icons {
-  display: flex;
-  text-align: center;
+  display: inline-flex;
+  margin-top: 20px;
   gap: 30px;
 }
 .joinus-text {
@@ -449,30 +453,47 @@ address {
 
 .team-icons {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sm-link {
+  display: flex;
+  width: 44px;
   height: 44px;
   border-radius: 50%;
-  padding: 16px 32px 30px 32px;
-  justify-content: space-between;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
 }
 .icon-team-bootom {
   text-align: center;
 }
+.sm-link:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.sm-link:hover svg {
+}
 
 .icon-team-bootom:hover,
 .icon-team-bootom:focus {
-  fill: var(--fourth-color);
-  background-color: var(--main-color);
 }
 
 .sm-team-icon:hover svg,
 .sm-team-icon:focus svg {
   fill: var(--fourth-color);
 }
+
 .sm-team-icon {
-  text-align: center;
+  fill: currentColor;
+}
+
+.our-clients {
   display: flex;
-  fill: #afb1b8;
+  justify-content: center;
+  gap: 30px;
 }
 
 .client {
@@ -484,6 +505,25 @@ address {
 .clients-icon {
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  width: 170px;
+  height: 92px;
+}
+.clients-link {
+  cursor: pointer;
+}
+.clients-link svg {
+  fill: currentColor;
+}
+.clients-link:hover {
+  color: var(--main-color);
+}
+.clients-link:hover svg,
+.clients-link:focus svg {
+  fill: var(--main-color);
 }
 
 .pictures {
@@ -511,13 +551,6 @@ address {
 .portfolio-top {
   background-color: #ffffff;
 }
-/* .menu-portfolio {
-  margin-top: 32px;
-  display: inline;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-} */
 
 .agency-two {
   color: var(--fifth-color);
