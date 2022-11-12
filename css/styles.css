@@ -23,6 +23,7 @@
   text-align: center;
   margin-bottom: 50px;
 }
+
 a {
   text-decoration: none;
 }
@@ -38,11 +39,18 @@ ul {
   letter-spacing: 0.03em;
 }
 .section-gray {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background: var(--seventh-color);
-  background-image: url(../images/BackgroundIndex.jpg);
   background-size: cover;
+  background: var(--seventh-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/BackgroundIndex.jpg);
+  background-size: cover;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
 .mail-icon {
   fill: var(--third-color);
@@ -53,7 +61,6 @@ ul {
   fill: var(--third-color);
   margin-right: 10px;
 }
-
 .mail:hover svg,
 .mail:focus svg {
   fill: var(--main-color);
@@ -65,8 +72,6 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 696px;
-  margin-top: 190px;
-  margin-bottom: 40px;
 }
 .button-main {
   background-color: var(--main-color);
@@ -78,8 +83,11 @@ ul {
   border: var(--seventh-color);
   cursor: pointer;
   font-family: inherit;
-  border-radius: 4%;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
 }
+
 .agency {
   color: var(--fifth-color);
   margin-right: 46px;
@@ -112,27 +120,15 @@ ul {
 }
 
 .lorem {
+  margin-top: 94px;
   display: flex;
+  line-height: 1.14;
+  justify-content: center;
   gap: 30px;
 }
 
 .loremparagraph {
   margin-top: 10px;
-  width: 270px;
-}
-
-.lorem-icons-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f4fa;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-radius: 4px;
-}
-
-.loremparagraph {
-  margin-right: 30px;
   width: 270px;
 }
 
@@ -142,7 +138,11 @@ ul {
   font-size: 14px;
   line-height: 1.14;
 }
-
+.list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
 .job {
   font-size: 36px;
   font-weight: 700;
@@ -162,6 +162,16 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   color: var(--third-color);
+}
+.lorem-icons-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  height: 120px;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
 }
 
 .name {
@@ -186,7 +196,6 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  /* margin: 46px; */
 }
 
 .colorgrey {
@@ -240,10 +249,6 @@ ul {
   gap: 10px;
 }
 
-/* .footer-joinus-margin:last-child {
-      margin-right: 0;
-    } */
-
 .joinus-link {
   display: flex;
   border-radius: 50%;
@@ -256,8 +261,14 @@ ul {
 .joinus-link:hover,
 .joinus-link:focus {
   background-color: var(--main-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.studioname > .dark-logo,
+.footer-logo > .dark {
+  color: var(--main-color);
+}
 .studioname {
   color: var(--fifth-color);
   margin: 0 auto;
@@ -334,6 +345,7 @@ ul {
   margin-top: 32px;
   margin-left: 93px;
 }
+
 .portoflio {
   color: var(--main-color);
   font-weight: 500;
@@ -352,7 +364,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  border-radius: 4%;
+  border-radius: 4px;
   border-style: none;
 }
 
@@ -379,7 +391,6 @@ address {
 .nonetextstyle {
   font-style: inherit;
 }
-
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -389,10 +400,17 @@ address {
 .lorem-margin:last-child {
   margin-right: 0;
 }
+.align-member {
+  text-align: center;
+}
+.team-class {
+  background-color: #f5f4fa;
+}
 .team-list {
   display: flex;
   gap: 30px;
 }
+
 .member {
   background-color: var(--fourth-color);
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
@@ -401,10 +419,9 @@ address {
 }
 
 .our-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background: var(--sixth-color);
 }
+
 .list-pictures {
   display: flex;
   flex-direction: row;
@@ -420,7 +437,12 @@ address {
   padding: 60px 0px;
 }
 
-.header-style {
+containter {
+  box-sizing: border-box;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
 }
 
@@ -433,13 +455,12 @@ address {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
-.footer-logo {
-  color: var(--secondary-color);
-}
 .logo {
   color: var(--fifth-color);
 }
-
+.footer-logo {
+  color: var(--secondary-color);
+}
 .padding-logo-fotter {
   padding-bottom: 20px;
 }
@@ -450,12 +471,12 @@ address {
   align-items: center;
   text-align: center;
 }
-
 .team-icons {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 30px;
 }
 
 .sm-link {
@@ -489,43 +510,31 @@ address {
 .sm-team-icon {
   fill: currentColor;
 }
-
 .our-clients {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-
-.client {
-  flex-basis: calc((100% - 150px) / 6);
-  align-items: center;
-  margin: 0 auto;
-}
-
-.clients-icon {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+.clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid currentColor;
   color: #afb1b8;
+  border-radius: 4px;
   width: 170px;
   height: 92px;
-}
-.clients-link {
   cursor: pointer;
 }
+
 .clients-link svg {
   fill: currentColor;
 }
-.clients-link:hover {
-  color: var(--main-color);
-}
-.clients-link:hover svg,
-.clients-link:focus svg {
+
+.client-icon:hover svg,
+.clients-icon:focus svg {
   fill: var(--main-color);
 }
-
 .pictures {
   display: flex;
 }
@@ -537,15 +546,18 @@ address {
 .picture-margin:last-child {
   margin-right: 0;
 }
+
 .buttons-margin {
   margin-right: 8px;
-  border-radius: 4%;
+  border-radius: 4px;
   border-style: none;
 }
 .buttons-margin:last-child {
   margin-right: 0;
 }
-
+.images {
+  justify-content: space-between;
+}
 /* Portfolio-css */
 
 .portfolio-top {
@@ -575,18 +587,13 @@ address {
   color: var(--third-color);
 }
 
-/* .buttons-portfolio:hover {
-          color: var(--secondary-color);
-          border-radius: 4%;
-          border-style: none;
-        }
-         */
 .buttons-portfolio {
   justify-content: center;
   padding-bottom: 50px;
   display: flex;
   gap: 8px;
-  border-radius: 4%;
+  border-radius: 4px;
+  margin-top: 94px;
 }
 
 .button-all {
@@ -599,9 +606,11 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--fifth-color);
-  border-radius: 4%;
+  border-radius: 4px;
   border-style: none;
   cursor: pointer;
+  width: 121px;
+  height: 38px;
 }
 
 .button-other {
@@ -614,27 +623,33 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--fifth-color);
-  border-radius: 4%;
+  border-radius: 4px;
   border-style: none;
   cursor: pointer;
+  width: 121px;
+  height: 38px;
 }
 
 .button-all:hover {
   color: var(--fourth-color);
   background-color: var(--main-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-other:hover {
   color: var(--fourth-color);
   background-color: var(--main-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .imagesproject {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  cursor: pointer;
 }
-
 .project {
   background-color: var(--fourth-color);
   box-sizing: border-box;
@@ -643,7 +658,6 @@ address {
 }
 
 .section {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
