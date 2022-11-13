@@ -232,6 +232,10 @@ ul {
 .footer-logo > .dark {
   color: var(--main-color);
 }
+
+.footer-logo:hover {
+  color: var(--main-color);
+}
 .studioname {
   color: var(--fifth-color);
   margin: 0 auto;
