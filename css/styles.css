@@ -228,24 +228,12 @@ ul {
   display: inline-block;
 }
 
-.studioname > .dark-logo,
-.footer-logo > .dark {
-  color: var(--main-color);
-}
-
-.footer-logo:hover {
-  color: var(--main-color);
-}
 .studioname {
   color: var(--fifth-color);
   margin: 0 auto;
   padding-top: 24px;
 }
 
-.studioname > .dark-logo,
-.footer-logo > .dark {
-  color: var(--main-color);
-}
 .joinus-section {
   margin-left: 70px;
   display: inline-block;
@@ -440,6 +428,12 @@ address {
 .pictures-job {
   border-radius: 0px 0px 4px 4px;
 }
+.black:hover {
+  color: var(--main-color);
+}
+.white:hover {
+  color: var(--main-color);
+}
 
 .dark-background {
   background: var(--seventh-color);
@@ -540,10 +534,8 @@ containter {
 .clients-link svg {
   fill: currentColor;
 }
-
-.client-icon:hover svg,
-.clients-icon:focus svg {
-  fill: var(--main-color);
+.clients-link:hover {
+  color: var(--main-color);
 }
 .pictures {
   display: flex;
