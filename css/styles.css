@@ -107,6 +107,7 @@ ul {
   gap: 50px;
 }
 .mailandtel {
+  display: flex;
   margin-top: 32px;
 }
 
